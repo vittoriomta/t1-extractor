@@ -3,10 +3,10 @@ import pandas as pd
 
 def masterall():
     # load the first pandas file
-    df1 = pd.read_excel('folder/input/Master.xls')
+    df1 = pd.read_excel('input/Master.xls')
 
     # load the second pandas file
-    df2 = pd.read_excel('folder/output/Data_sorted.xlsx')
+    df2 = pd.read_excel('output/Data_sorted.xlsx')
 
     # merge the two dataframes based on the 'Container' column
     merged_df = pd.merge(df1, df2, on='Container', how='left')
@@ -25,6 +25,6 @@ def masterall():
         'Unnamed: 37', 'Id.', 'Filename', 'Mrn', 'Weight', 'Seal', 'Cargo'], axis=1)
 
     # save the merged dataframe to a new csv file
-    merged_df.to_excel('folder/output/merged_file.xlsx', index=False)
+    merged_df.to_excel('output/merged_file.xlsx', index=False)
 
 

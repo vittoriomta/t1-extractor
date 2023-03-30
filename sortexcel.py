@@ -5,9 +5,9 @@ import glob
 
 def sortdocs(df1, df2):
     # Load the first file into a pandas DataFrame
-    df1 = pd.read_excel('folder/input/Master.xls')
+    df1 = pd.read_excel('input/Master.xls')
     # Load the second file into a pandas DataFrame
-    df2 = pd.read_excel('folder/output/Raw_Data.xlsx')
+    df2 = pd.read_excel('output/Raw_Data.xlsx')
 
     # Filter out values in df1['Container'] that are not in df2['Container']
     mask = df1['Container'].isin(df2['Container'])
@@ -33,4 +33,4 @@ def sortdocs(df1, df2):
     df2_sorted = df2_sorted.drop('sort_index', axis=1)
 
     # Save the sorted second DataFrame to a new file
-    df2_sorted.to_excel('folder/output/Data_sorted.xlsx', index=False)
+    df2_sorted.to_excel('output/Data_sorted.xlsx', index=False)

@@ -5,7 +5,7 @@ import pdfplumber
 import re
 
 def extract(file):
-    dir = 'folder/upload'
+    dir = 'upload'
 
 
     Digit = [].append
@@ -274,4 +274,4 @@ def extract(file):
         df = [Count,Filename,Digit,CL_Mrn,CL_Weight,CL_Seal,CL_Cargo,]
         rows.append(df)
         df2 = pd.DataFrame((rows), columns=['Id.','Filename','Container', 'Mrn', 'Weight','Seal','Cargo'])
-        df2.to_excel(('folder/output/Raw_Data.xlsx'), index=False)
+        df2.to_excel(('output/Raw_Data.xlsx'), index=False)

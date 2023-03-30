@@ -13,19 +13,21 @@ app = Flask(__name__)
 
 app.secret_key = 'mysecretkey'
 
-app.config["UPLOAD_DIR"] = "folder/upload"
-app.config["INPUT_MASTER"] = "folder/input"
-app.config["OUTPUT_MASTER"] = "folder/output"
+app.config["UPLOAD_DIR"] = "upload"
+app.config["INPUT_MASTER"] = "input"
+app.config["OUTPUT_MASTER"] = "output"
 
 @app.route('/', methods = ["GET", "POST"])
 def upload_files():
     if request.method == 'POST':
         if request.form.get('delete-files') == 'true':
-            for directory in ['folder/input', 'folder/upload', 'folder/output']:
+            for directory in ['input', 'upload', 'output']:
                 if os.listdir(directory):
                     for file in os.listdir(directory):
-                        os.remove(os.path.join(directory, file))
+                        if file != '.gitignore':  # Check if the file is not .gitignore
+                            os.remove(os.path.join(directory, file))
             return redirect(url_for('upload_files'))
+
 
         if 'form1' in request.form:
             files = os.listdir(app.config["UPLOAD_DIR"])
