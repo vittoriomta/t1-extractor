@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>PDF Extractor</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+    <h1>CSD</h1>
+    <p class='instructions'>Upload one or more PDF files **No Pdf Scanned or IMA**</p>
+    <form name='form1' method="post" enctype="multipart/form-data">
+        <div class="form-group">
+            <div class="ui-widget">
+                <input id="text" type="file" class="form-control" name="file1" placeholder="select a file to upload"
+                    required multiple>
+                <button td="text" type="submit" name="form1">Upload PDFs</button>
+            </div>
+    </form>
+
+    <p class='instructions'>Upload Master File **Remeber the name before upload 'Master.xlsx'**</p>
+    <form name='form2' method="post" enctype="multipart/form-data">
+        <div class="form-group">
+            <div class="ui-widget">
+                <input id="text" type="file" class="form-control" name="file2" placeholder="select a file to upload"
+                    required multiple>
+                <button td="text" type="submit" name="form2">Upload Master</button>
+            </div>
+    </form>
+
+    <p class='instructions'>******* Always empty the folder directory at the end of the process *******</p>
+    <form method="post">
+        <button type="submit" id="delete-files" name="delete-files" value="true">Delete Files</button>
+    </form>
+
+    <h1>instructions</h1>
+    <p>STEP1: Upload one or multiple PDF <strong>(only '.pdf')</strong></p>
+    <p>STEP2: Upload <strong>'Master.xlxs', </strong> other names and types will crash</p>
+    <p>STEP3: Go in the url and add the <strong>'/extractor'</strong> to the current url for use the functions of the
+        website </p>
+    <p>STEP4: Click on each button <strong>in order</strong>. Wait every time the download page to appear before click
+        the next button function</p>
+    <p>STEP5: Go in the url and add the <strong>'/download'</strong> to the current url for download all your files (or
+        download each when you click each function)</p>
+    <p>STEP6: Go back to the start url '/' and click on the button 'delete files' <strong>(othewise will crach the next
+            time)</strong></p>
+
+</html>

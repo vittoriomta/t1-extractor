@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>PDF Extractor</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+    <h1>CSD Functions</h1>
+    <div class="raw-data">
+        <h3>Raw Data</h3>
+        <form name='extract' method="post">
+            <input name='extract-input' type="submit" value="Extract Data" />
+        </form>
+    </div>
+    <div class="Sorted-Data">
+        <h3>Sorted Data</h3>
+        <form name='sort' method="post">
+            <input name='sort-input' type="submit" value="Sort Data" />
+        </form>
+    </div>
+    <div class="Sorted-Data">
+        <h3>Merge PDF Sorted</h3>
+        <form name='merge' method="post">
+            <input name='merge-input' type="submit" value="Merge Data" />
+        </form>
+    </div>
+    <div class="Master-All">
+        <h3>Master Finale</h3>
+        <form name='master' method="post">
+            <input name='master-input' type="submit" value="Master Data" />
+        </form>
+    </div>
+
+</body>
+
+</html>
