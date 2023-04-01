@@ -1,9 +1,6 @@
----
-title: Website for extracting data from transporting customs document
-date: 2020-01-30
-description: https://github.com/vittoriomta
----
-I've built for my department team a website to upload the T1 documents and automatically create an excel file with all the data in it.
+# Website for extracting data from transporting customs document
+
+I've built for my department team a website for uploading the T1 documents and automatically create an excel file with all the data in it.
 
 The T1 shipping note is  **a customs document used in the cross-border movement of goods for transporting customs goods from one customs office to another** . Basically, the T1 note is used to carry non-EU goods within the EU territory.
 
@@ -15,9 +12,11 @@ pip install -r requirements.txt
 
 Then enter the /app folder and run ``python3 app.py``:
 
-The website basically have two main function for uplaoding the files, the first one is for all the PDF documents of T1 (atm scanned pdf will not work).
+The website basically have two main function for uplaoding the files, the first one is for all the PDF documents of T1 (scanned pdf will not work).
 
 The second command if for upload the 'Master.xls' file where in the second column you can save all the containers in order for later to match with the data extracted (optional).
+
+**Added in the repo Master.xls for reference. Just paste the list of container you want to match in the second column**
 
 After loading the files go to /extractor in the url and you will find four options:
 
