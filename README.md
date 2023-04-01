@@ -1,4 +1,4 @@
-# Website for extracting data from transporting customs document
+# Website for extracting data from transporting customs document (T1)
 
 I've built for my department team a website for uploading the T1 documents and automatically create an excel file with all the data in it.
 
