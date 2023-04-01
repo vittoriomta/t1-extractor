@@ -29,7 +29,7 @@ If you go back to the main page '/' there is a button for deleting the files imp
 
 For our team is been a great improvement beacuse we spend a lot of time for creating the documents of our train's departure.
 
-From 40/45 minuts of work time we reduced to about 10 minutes with this applications. If you work with this kind of document (Europe probably), this website will defintely be usefull.
+From 40/45 minuts of work time we reduced to about 10 minutes with this applications. If you work with this kind of document (Europe probably), this project will definitely be usefull.
 
 Planning in the near future to implement a function for scanned documents and IMA documents.
 
