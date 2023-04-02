@@ -27,7 +27,7 @@ After loading the files go to /extractor in the url and you will find four optio
 
 If you go back to the main page '/' there is a button for deleting the files imported and created so you can run it again.
 
-For our team is been a great improvement beacuse we spend a lot of time for creating the documents of our train's departure.
+For our team is been a great improvement beacuse we spend a lot of time creating the documents for our train's departure.
 
 From 40/45 minuts of work time we reduced to about 10 minutes with this applications. If you work with this kind of document (Europe probably), this project will definitely be usefull.
 
